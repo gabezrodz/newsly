@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   background-color: #49065e;
   height: 15vh;
+  padding: 0px 50px;
 `;
 
 export const Wrapper = styled.div`
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-top: 5vh ;
+  padding-top: 5vh;
   gap: 30px;
 `;
 
