@@ -7,6 +7,8 @@ export const Container = styled.div`
   padding: 5px;
   background: #fff;
   gap: 10px;
+  width: 500px;
+
   img {
     object-fit: cover;
     height: 290px;
