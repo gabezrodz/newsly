@@ -14,7 +14,7 @@ export default function Card({ titulo, image, resumo, link }: PropsCard) {
       <div>
         <Titulo>{titulo}</Titulo>
         <Resumo>{resumo}</Resumo>
-        <ButtonNoticia href={link}>Ir para noticia</ButtonNoticia>
+        <ButtonNoticia target="_blank" href={link}>Ir para noticia ▶</ButtonNoticia>
       </div>
     </Container>
   );
