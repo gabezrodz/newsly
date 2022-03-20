@@ -4,6 +4,9 @@ export const Container = styled.header`
   background-color: #49065e;
   height: 15vh;
   padding: 0px 50px;
+  @media (max-width: 600px) {
+    height: 30vh;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -16,7 +19,14 @@ export const Wrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: white
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 `;
 
@@ -29,6 +39,15 @@ export const Menu = styled.nav`
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    gap: 10px 50px;
+    margin-left:  25px;
+  }
 `;
 
 export const Link = styled.a`

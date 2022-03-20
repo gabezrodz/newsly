@@ -33,9 +33,22 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 15px;
   }
+
+  @media (max-width: 600px) {
+    width: 350px;
+
+    img {
+      object-fit: fill;
+      height: 200px;
+    }
+  }
 `;
 
-export const Titulo = styled.h4``;
+export const Titulo = styled.h4`
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+`;
 export const Resumo = styled.p`
   margin: 5px 0;
 `;

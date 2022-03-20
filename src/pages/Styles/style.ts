@@ -12,4 +12,8 @@ export const Wrapper = styled.main`
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media(max-width: 600px){
+    max-width: 500px
+  }
 `;
