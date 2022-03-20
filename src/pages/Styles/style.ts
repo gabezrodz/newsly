@@ -9,6 +9,7 @@ export const Wrapper = styled.main`
   max-width: 1140px;
   margin: 15px auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 `;

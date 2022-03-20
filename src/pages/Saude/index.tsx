@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Card from "../../components/Card/Card";
 import { Wrapper } from "../Styles/style";
 import LoadingAnimation from "../../components/Loading";
-import { getTopHeadLines } from "../../services/newsApi/noticias";
+import { getTopHeadLinesHealth } from "../../services/newsApi/noticias";
 
 interface Noticia {
   title: string;
@@ -12,13 +12,13 @@ interface Noticia {
   urlToImage: string;
 }
 
-function Home() {
+function Saude() {
   const [noticias, setNoticias] = useState<Noticia[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const getNoticias = async () => {
     setIsLoading(true);
-    const response = await getTopHeadLines();
+    const response = await getTopHeadLinesHealth();
     setNoticias(response.articles);
     setIsLoading(false);
   };
@@ -53,4 +53,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Saude;
