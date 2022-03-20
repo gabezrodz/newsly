@@ -24,7 +24,7 @@ const loadingDotVariants = {
 
 const loadingDotTransition ={
     duration: 0.2,
-    yoyo: Infinity,
+    repat: Infinity,
     ease: "easeInOut"
 }
 

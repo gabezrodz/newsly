@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const cardAnimation = keyframes`
+from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -8,12 +20,13 @@ export const Container = styled.div`
   background: #fff;
   gap: 10px;
   width: 500px;
+  animation: ${cardAnimation} 1s ease-out forwards;
 
   img {
     object-fit: cover;
     height: 250px;
     border-radius: 8px;
-    margin: 5px
+    margin: 5px;
   }
   div {
     display: flex;
