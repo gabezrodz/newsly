@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
   align-items: center;
   padding-top: 5vh;
   gap: 30px;
+
+  a {
+    text-decoration: none;
+    color: white
+  }
 `;
 
 export const Logo = styled.h1`
