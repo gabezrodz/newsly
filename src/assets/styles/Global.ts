@@ -8,6 +8,17 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background-color: #282628
+    background-color: #282628;
 }
-`;
+
+
+h3{
+  color: #fff
+}
+
+a{
+  text-decoration: inherit;
+  color: inherit
+}
+`
+

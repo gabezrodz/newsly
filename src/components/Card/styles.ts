@@ -58,7 +58,7 @@ export const ButtonNoticia = styled.a`
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
-  background-color: #49065e;
+  background-color: #E22C2B;
   border-radius: 8px;
   padding: 10px 20px;
   width: fit-content;
