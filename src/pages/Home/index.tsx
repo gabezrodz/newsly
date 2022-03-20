@@ -26,7 +26,7 @@ function Home() {
     getNoticias();
   }, []);
 
-  console.log(noticias);
+ 
 
   return (
     <>
