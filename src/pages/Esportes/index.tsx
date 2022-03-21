@@ -33,7 +33,7 @@ function Esportes() {
       <Header />
       <Wrapper>
       
-        {isLoading ? <LoadingAnimation /> : noticias?.map((noticia, index) => {
+        {isLoading ? <LoadingAnimation /> : noticias.map((noticia, index) => {
           return (
             <Card
               key={index}
