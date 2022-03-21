@@ -35,7 +35,7 @@ function Tecnologia() {
         {isLoading ? (
           <LoadingAnimation />
         ) : (
-          noticias.map((noticia, index) => {
+          noticias?.map((noticia, index) => {
             return (
               <Card
                 key={index}
