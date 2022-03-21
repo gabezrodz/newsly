@@ -26,8 +26,6 @@ function Tecnologia() {
     getNoticias();
   }, []);
 
-  console.log(noticias);
-
   return (
     <>
       <Header />

@@ -23,16 +23,14 @@ function Home() {
     setIsLoading(false);
   };
 
-  // useEffect(() => {
-  //   getNoticias();
-  // }, []);
-
- 
+  useEffect(() => {
+    getNoticias();
+  }, []);
 
   return (
     <>
       <Header />
-      <button onClick={() => getNoticias}> teste </button>
+
       <Wrapper>
         {isLoading ? (
           <LoadingAnimation />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  background-color: #BF1425;
+  background-color: #bf1425;
   height: 15vh;
   padding: 0px 50px;
 
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-top: 5vh;
+  padding-top: 3vh;
   gap: 30px;
   align-items: baseline;
 
@@ -36,16 +36,16 @@ export const Wrapper = styled.div`
 export const Logo = styled.h1`
   color: #fff;
   font-style: italic;
-  border-bottom: solid #FFF 3px;
+  border-bottom: solid #fff 3px;
   padding: 1px 0px 10px 0px;
-  border-top: solid #FFF 3px;
+  border-top: solid #fff 3px;
 `;
 
 export const Menu = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
+  gap: 25px;
 
   @media (max-width: 600px) {
     font-size: 1.2rem;

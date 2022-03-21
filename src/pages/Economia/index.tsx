@@ -26,7 +26,7 @@ function Economia() {
     getNoticias();
   }, []);
 
-  console.log(noticias);
+ 
 
   return (
     <>

@@ -26,7 +26,7 @@ function Saude() {
     getNoticias();
   }, []);
 
-  console.log(noticias);
+ 
 
   return (
     <>

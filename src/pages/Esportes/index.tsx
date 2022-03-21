@@ -26,14 +26,13 @@ function Esportes() {
     getNoticias();
   }, []);
 
-  console.log(noticias);
-
+ 
   return (
     <>
       <Header />
       <Wrapper>
       
-        {isLoading ? <LoadingAnimation /> : noticias.map((noticia) => {
+        {isLoading ? <LoadingAnimation /> : noticias?.map((noticia) => {
           return (
             <Card
               key={Math.random()}
