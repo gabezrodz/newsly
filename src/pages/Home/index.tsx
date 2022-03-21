@@ -22,23 +22,25 @@ function Home() {
     setNoticias(response.articles);
     setIsLoading(false);
   };
-  useEffect(() => {
-    getNoticias();
-  }, []);
+
+  // useEffect(() => {
+  //   getNoticias();
+  // }, []);
 
  
 
   return (
     <>
       <Header />
+      <button onClick={() => getNoticias}> teste </button>
       <Wrapper>
         {isLoading ? (
           <LoadingAnimation />
         ) : (
-          noticias?.map((noticia, index) => {
+          noticias?.map((noticia) => {
             return (
               <Card
-                key={index}
+                key={Math.random()}
                 titulo={noticia.title}
                 resumo={noticia.description}
                 link={noticia.url}

@@ -33,10 +33,10 @@ function Economia() {
       <Header />
       <Wrapper>
       
-        {isLoading ? <LoadingAnimation /> : noticias?.map((noticia, index) => {
+        {isLoading ? <LoadingAnimation /> : noticias?.map((noticia) => {
           return (
             <Card
-              key={index}
+              key={Math.random()}
               titulo={noticia.title}
               resumo={noticia.description}
               link={noticia.url}
